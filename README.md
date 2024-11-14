@@ -30,6 +30,13 @@ Each thread continues exploring until it reaches a dead end where no unvisited n
 
 # Visualization and Output
 
+#### To compile this program in the Linux terminal, use the following command:
+`g++ -std=c++11 -pthread -o App App.cpp`
+<ul>
+   <li>-std=c++11 : Specifies the use of the C++11 standard.</li>
+   <li>-pthread : Enables multi-threading, allowing the program to run more efficiently when working with large matrices.</li>
+</ul>
+
 <p>The completed maze, along with the distinct paths taken by each thread, is saved as a .ppm image file. Each path is represented by a unique color based on the thread ID, providing a clear visual of concurrent traversal and thread-distributed exploration. Walls appear as solid colors, while paths display in contrasting colors to emphasize the exploration routes taken by different threads.</p>
 
 # Maze walls have white color RGB(255,255,255)
